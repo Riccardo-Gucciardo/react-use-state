@@ -1,6 +1,9 @@
-const Button = () => {
+
+
+const Button = ( {title,onSelect,isActive} ) => {
+    const active = isActive  ? "btn-warning":"btn-primary"
      return(
-        <button>click me</button>
+        <button className={`btn ${active}`} onClick={()=> onSelect()}>{title}</button>
      )
 }
 
