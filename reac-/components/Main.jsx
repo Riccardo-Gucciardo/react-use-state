@@ -5,12 +5,12 @@ import Card from "./Card";
 import { useState } from "react";
 
 const Main = ()=> {
-    const {selectedanguages,setSelectedLanguages} = useState(null)
+    const [selectedanguages,setSelectedLanguages] = useState(null)
 
-    const renderLanguage = () => Languages.map((Languages)=> {
-        const active = selectedanguages === Languages
+    const renderLanguage = () => Languages.map((Language)=> {
+        const active = selectedanguages === Language
         return(
-            <Button key={Languages.id} title ={Languages.title} isActive={active} onSelect={() => setSelectedLanguages(Languages)}/>
+            <Button key={Language.id} title ={Language.title} isActive={active} onSelect={() => setSelectedLanguages(Language)}/>
         )
     })
 
