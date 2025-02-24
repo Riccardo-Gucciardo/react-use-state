@@ -1,7 +1,7 @@
-const Header = ()=> {
+const Main = ()=> {
     return (
         <h1>ciao</h1>
     )
 }
 
-export default Header
+export default Main
