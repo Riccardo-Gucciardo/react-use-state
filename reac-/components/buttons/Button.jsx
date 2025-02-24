@@ -7,4 +7,4 @@ const Button = ( {title,onSelect,isActive} ) => {
      )
 }
 
-export default Button
+export default Button 
